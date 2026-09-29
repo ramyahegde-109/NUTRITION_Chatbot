@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e5ddd5; /* WhatsApp-like background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 500px; /* Mobile width */
+    height: 90vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #075e54;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #efe7dd;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 80%;
+    line-height: 1.5;
+    font-size: 14px;
+    white-space: pre-wrap; /* Keeps formatting from AI */
+}
+
+.bot-message {
+    background-color: #fff;
+    align-self: flex-start;
+    border-top-left-radius: 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.user-message {
+    background-color: #dcf8c6; /* Green bubble */
+    align-self: flex-end;
+    border-top-right-radius: 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.input-area {
+    padding: 15px;
+    background: #f0f0f0;
+    border-top: 1px solid #ddd;
+}
+
+.age-input-wrapper {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#age {
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.text-input-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+textarea {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    resize: none;
+    height: 50px;
+}
+
+button {
+    background-color: #075e54;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #128c7e;
+}

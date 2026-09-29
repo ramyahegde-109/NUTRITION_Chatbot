@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <h2>🥗 Child Nutrition Bot</h2>
+            <p>Expert advice for healthy growth</p>
+        </div>
+
+        <!-- Chat History Area -->
+        <div id="chat-box" class="chat-box">
+            <div class="message bot-message">
+                Hello! 👋 I am your nutrition assistant. <br>
+                Tell me what ingredients you have and your child's age. I'll create a recipe for you!
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="age-input-wrapper">
+                <label for="age">Child Age:</label>
+                <input type="number" id="age" value="5" min="1" max="18">
+            </div>
+            
+            <div class="text-input-wrapper">
+                <textarea id="user-input" placeholder="E.g., I have rice, dal, and spinach..."></textarea>
+                <button onclick="sendMessage()">Send ➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
